@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>International Liquor</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Plugin file -->
+    <link rel="stylesheet" href="./css/addons/datatables.min.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="demo">
+            <li><a href="index.html" class="navbar-brand mb-0 h1" style="color:white; margin-left: 12px">International Liquor</a></li>
+        </ul>
+        <ul class="demo">
+            <li><a href="tipo_licores.html" class="navbar-brand mb-0 h1" style="color:white">Tipos de licores</a></li>
+        </ul>
+        <ul class="demo">
+            <li><a href="about.html" class="navbar-brand mb-0 h1" style="color:white"> Contactenos</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="wrap">
+        <div class="store-wrapper">
+            <div class="category_list">
+                <a href="#" class="category_item" category="all">Todo</a>
+                <a href="#" class="category_item" category="Licores Dulces">Licores Dulces</a>
+                <a href="#" class="category_item" category="Licores Destilados">Licores Destilados</a>
+                <a href="#" class="category_item" category="Licor Espumante">Licor Espumante</a>
+            </div>
+            <section class="products-list" id="licores">
+                <div class="product-item" category="Licores Destilados">
+                    <img src="images/licores/tequila.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Tequila" style="color:white">Tequila</a>
+                </div>
+                <div class="product-item" category="Licores Destilados">
+                    <img src="images/licores/Pisco.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Pisco" style="color:white">Pisco</a>
+                </div>
+                <div class="product-item" category="Licores Destilados">
+                    <img src="images/licores/ginebra.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Ginebra" style="color:white">Ginebra</a>
+                </div>
+                <div class="product-item" category="Licores Destilados">
+                    <img src="images/licores/ron.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Ron" style="color:white">Ron</a>
+                </div>
+                <div class="product-item" category="Licores Dulces">
+                    <img src="images/licores/amaretto.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Amaretto" style="color:white">Amaretto</a>
+                </div>
+                <div class="product-item" category="Licores Dulces">
+                    <img src="images/licores/benedictine.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Benedictine" style="color:white">Benedictine</a>
+                </div>
+                <div class="product-item" category="Licores Dulces">
+                    <img src="images/licores/frangelico.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Frangelico" style="color:white">Frangelico</a>
+                </div>
+                <div class="product-item" category="Licores Dulces">
+                    <img src="images/licores/grand-marnier.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#GrandMarnier" style="color:white">Grand Marnier</a>
+                </div>
+                <div class="product-item" category="Licor Espumante">
+                    <img src="images/licores/brut.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Brut" style="color:white">Brut</a>
+                </div>
+                <div class="product-item" category="Licor Espumante">
+                    <img src="images/licores/moscato.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Moscato" style="color:white">Moscato</a>
+                </div>
+                <div class="product-item" category="Licor Espumante">
+                    <img src="images/licores/demisec.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#DemiSec" style="color:white">Demi Sec</a>
+                </div>
+                <div class="product-item" category="Licor Espumante">
+                    <img src="images/licores/extrabrut.jpg" alt="" id="imagen">
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#ExtraBrut" style="color:white">Extra Brut</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal fade" id="Tequila" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tequila</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/tequila.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 60 </p>
+                        <p class="card-text">Formato: 750ML - 1L </p>
+                        <p class="card-text">Marcas: 1800, 3 generaciones, Agavero, Antigua Cruz, Centenario, Centinela, Casa Dragones. </p>
+                        <p class="card-text">Descripcion: El tequila es una bebida alcohlica regional obtenida por destilacion, tiene una preparacion directa y originalmente de material extraido. Esta bebida alcoholica puede tener diferentes sabores, colores, tambien puede
+                            ser añadido edulcorantes, colorantes, aromatizantes. </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Pisco" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pisco</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Pisco.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 44 </p>
+                        <p class="card-text">Formato: 750ML, 1L, 1L </p>
+                        <p class="card-text">Marcas: Altos del carmen, Valle el elqui, Brujas de salamanca, Hacienda la torre, Mistral. </p>
+                        <p class="card-text">Descripcion: El pisco en una aguardiente de uva, elavorado entre chile y peru. Es incoloro o un ligero tono ambar, muy fragante. Contiene 4 procesos el cultivo, cosecha, destilacion y el evasado. </p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Ginebra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ginebra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Ginebra.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 40 </p>
+                        <p class="card-text">Formato: 750ML, 1L </p>
+                        <p class="card-text">Marcas: Hennesy, Hendricks, Gin Mare, Greenalls, Beefeater. </p>
+                        <p class="card-text">Descripcion: La ginebra es una bebida alcoholica destilada que posee un sabor predominante a nebrinas, los frutos del enebro. La ginebra es una de las categorias de destilado mas amplia, con diversas regiones de produccion. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Ron" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ron</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Ron.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 40 </p>
+                        <p class="card-text">Formato: 500ML, 700ML, 1L </p>
+                        <p class="card-text">Marcas: Appleton, Bacardi, Bore, Brugal, Captain Morgan, Centenario. </p>
+                        <p class="card-text">Descripcion: El ron es una bebida alcoholica producida exclusivamente de la fermentacion y destilacion del jugo de la caña de azucar, que presenta una caracteristica aromaticas especificas del ron con sustancia volatin superior
+                            o igual a 225 g/hl.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Amaretto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Amaretto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Amaretto.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 25 </p>
+                        <p class="card-text">Formato: 500ML, 750ML, 1L </p>
+                        <p class="card-text">Marcas: Disaronno, Genovese, Luxardo, Amaretto Lombardo, etc.</p>
+                        <p class="card-text">Descripcion: El Amaretto es un licor que se elabora a partir de los huesos del albaricoque y almendras al que le añaden alcohol puro, azúcar, ademas de diecisiete plantas y frutas entre las que sobresale la vainilla, el melocotón
+                            y cereza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Benedictine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Benedictine</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Benedictine.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 40</p>
+                        <p class="card-text">Formato: 750ML</p>
+                        <p class="card-text">Marcas: De Martino, Domun Massenez, Emiliana, Errazuriz, Etnico, etc.</p>
+                        <p class="card-text">Descripcion: Benedictine es un licor de hierbas y dulce. Algunas de ellas son la angélica, el hisopo, enebro, mirra, azafrán, aloe, árnica y canela. Tiene un color dorado con destellos naranja intensos. De estructura densa y sabor
+                            dulce, con aromas y sabores cítricos, a miel, ahumados, especiados y amaderados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Frangelico" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Frangelico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Frangelico.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 28</p>
+                        <p class="card-text">Formato: 700ML</p>
+                        <p class="card-text">Marcas: Frangelico, Amarula, Mitjans</p>
+                        <p class="card-text">Descripcion: Frangelico es un licor de sabor dulce hecho a base de avellanas silvestres tostadas sumergidas en alcohol junto con bayas y especias. Recibe su nombre del monje que vivía en una ermita del Piamonte y que la inventó
+                            hacia el año 1600 junto con otras muchas bebidas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="GrandMarnier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Grand Marnier</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/grand-marnier.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 40</p>
+                        <p class="card-text">Formato: 700ML</p>
+                        <p class="card-text">Marcas: Grand Marnier, Disaronno, Aperol</p>
+                        <p class="card-text">Descripcion: El Grand Marnier es un licor creado en 1880 por Alexandre Marnier-Lapostolle. Se fabrica a partir de una mezcla de coñac y esencia destilada de naranja amarga. Tiene un 40% de alcohol (40°) y se fabrican diversas variedades,
+                            la mayoría de las cuales se toman como digestivo y pueden usarse en cócteles y postres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Brut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Brut</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Brut.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 12,5</p>
+                        <p class="card-text">Formato: 350ML, 750ML, 1L, 3L</p>
+                        <p class="card-text">Marcas: Valdivieso, Undurraga, Ambassador, Catedral.</p>
+                        <p class="card-text">Descripcion: Brut es un vino que tiene un contenido menor a 12 g/l en azúcares. Ideal para carnes y asados. Seco: vinos espumosos que contienen entre 17 y 32 g/l. Muy bien para acompañar la repostería, pasteles y dulces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Moscato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Moscato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/Moscato.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 12</p>
+                        <p class="card-text">Formato: 750ML</p>
+                        <p class="card-text">Marcas: Don Luciano, Canti Moscato, Amatista, Toso Moscato, Cappo Moscato.</p>
+                        <p class="card-text">Descripcion: Los vinos Moscato son aquellos que se han elaborado mediante la variedad de uva Moscato o Moscatel. El vino Moscato se elabora principalmente en la provincia de Asti, al suroeste de Italia. El vino de esta provincia
+                            ha conseguido la Denominación de Origen por su gran calidad y sabor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="DemiSec" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Demi Sec</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/demisec.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 12</p>
+                        <p class="card-text">Formato: 750ML</p>
+                        <p class="card-text">Marcas: Santa Carolina, Chandon, Valdivieso, Sensus, Misiones de Rengo</p>
+                        <p class="card-text">Descripcion: La etiqueta muestra la palabra "Demi-Sec". Este Champagne tiene una cantidad superior de azúcar añadido después del degüello que el Brut, lo que le da un carácter más dulce. Es un Champagne ideal para los postres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ExtraBrut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Extra Brut</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/licores/extrabrut.jpg" class="card-img-top" alt="..." id="imagen">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-text">Grados: 12,5</p>
+                        <p class="card-text">Formato: 350ML, 750ML,</p>
+                        <p class="card-text">Marcas: Valdivieso, Undurraga, Chandon, Morande, Las Candelas.</p>
+                        <p class="card-text">Descripcion: Extra Brut: contiene hasta 6 gramos de azúcar por litro, siendo ligeramente más dulce que el brut nature.es un vino completo, al poseer un aroma con notas frutales cítricas como mandarina, pomelo, cáscara de limón,
+                            entre otras </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<footer class="text-center text-white" style="background-color:#2D3E50;" id="footer" >
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4" id="section">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="white"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="white"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="white"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="white"><i class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="white"><i class="fab fa-linkedin"></i></a>
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button" data-mdb-ripple-color="white"><i class="fab fa-github"></i></a>
+
+            <!-- Section: Social media -->
+
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" style="background-color: #2D3E50;">
+                © 2022 Copyright:
+                <a class="text-white" href="">InternationaLiquor.com</a>
+            </div>
+    </div>
+    <!-- Copyright -->
+    </section>
+</footer>
+
+</html>

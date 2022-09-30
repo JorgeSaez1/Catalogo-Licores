@@ -1,0 +1,32 @@
+html {
+    width: auto;
+    height: auto;
+}
+
+.navbar {
+    background-color: #2D3E50;
+    height: 70px;
+}
+
+#imagen {
+    width:auto ;
+    height:auto ;
+}
+
+#card-group1{
+    width:1350px ;
+    height:350px;
+}
+
+footer {
+    margin-top: 370px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+ul.demo {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
